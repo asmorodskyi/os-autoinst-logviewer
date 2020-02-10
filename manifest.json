@@ -6,6 +6,11 @@
 
     "description": "Process openQA os-autoinst log",
 
+    "permissions": [
+        "*://openqa.suse.de/*",
+        "activeTab"
+      ],
+
     "content_scripts": [
       {
         "matches": ["*://openqa.suse.de/tests/*/file/autoinst-log.txt"],
