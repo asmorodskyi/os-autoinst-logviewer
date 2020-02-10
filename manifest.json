@@ -1,0 +1,16 @@
+{
+
+    "manifest_version": 2,
+    "name": "openQALogViewer",
+    "version": "1.0",
+
+    "description": "Process openQA os-autoinst log",
+
+    "content_scripts": [
+      {
+        "matches": ["*://openqa.suse.de/tests/*/file/autoinst-log.txt"],
+        "js": ["logviewer.js"]
+      }
+    ]
+
+  }
